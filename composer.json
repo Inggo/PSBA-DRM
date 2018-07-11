@@ -1,0 +1,24 @@
+{
+    "name": "inggo/psba-drm",
+    "authors": [
+        {
+            "name": "Inggo Espinosa",
+            "email": "inggo.espinosa@gmail.com"
+        }
+    ],
+    "keywords": [
+        "theme",
+        "psba-manila",
+        "psba-drm"
+    ],
+    "type": "wordpress-theme",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Inggo\\WordPress\\": "wp/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
