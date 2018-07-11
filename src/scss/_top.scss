@@ -1,0 +1,75 @@
+// Move to nav
+.navbar {
+    background: #212529;
+}
+
+.nav-item {
+    &:hover,
+    &.active {
+        background: url('images/bg.png');
+    }    
+}
+
+// Move to front-page
+.front-page-banners {
+    border-top: 12px solid #fff;
+    border-bottom: 12px solid #fff;
+
+    margin-left: -15px;
+    margin-right: -15px;
+
+    &:after,
+    &:before {
+        content: "";
+        z-index: 1;
+        position: absolute;
+        border-top: 10px solid #dc3545;
+        left: 0;
+        right: 0;
+    }
+
+    &:before {
+        top: -11px;
+    }
+
+    &:after {
+        bottom: -11px;
+    }
+}
+
+.front-page-tabs {
+    .nav-item {
+        &:hover,
+        &.active {
+            background: none;
+        }    
+    }
+}
+
+// End
+.site-header {
+    background: none;
+}
+
+.site-title {
+    font-weight: 900;
+    font-size: 2.25em;
+
+    .subtitle {
+        color: #ffe7a0;
+        display: block;
+        font-weight: 700;
+    }
+}
+
+.site-header--main {
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.site-logo,
+.site-secondary-logo {
+    margin: 20px auto;
+    max-width: 87px;
+    animation: none !important;
+}
