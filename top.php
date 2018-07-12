@@ -4,9 +4,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
+          <?php if (bloginfo('description')): ?>
           <div class="tagline text-center">
             <?php bloginfo('description'); ?>
           </div>
+          <?php endif; ?>
         </div>
         <div class="col-md-6">
             <div class="search-form float-right">

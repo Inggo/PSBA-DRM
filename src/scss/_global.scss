@@ -3,9 +3,56 @@ body {
 }
 
 main {
-    padding: 16px 0;
+    padding: 15px 0;
     > .container {
         background: #fff;
         box-shadow: 0 10px 20px rgba(0,0,0,.22), 0 14px 56px rgba(0,0,0,.25);
     }
+
+    article {
+        padding-bottom: 15px;
+    }
+}
+
+.sidebar-nav {
+    margin: 15px -15px 15px 0;
+
+    .list-group-item {
+        border-radius: 0;
+        color: $gray-900;
+        background: $gray-100;
+
+        &.active {
+            border: 0;
+            background: $gray-600;
+            color: $gray-100;
+
+            &:active,
+            &:hover {
+                background: $gray-700;
+                color: $white;
+            }
+        }
+
+        border-left: 0;
+        border-right: 0;
+
+        &:first-child {
+            border-top: 0;
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        &:active,
+        &:hover {
+            background: $gray-300;
+            color: $gray-700;
+        }
+    }
+}
+
+.concept-paper {
+    margin-bottom: 15px;
 }

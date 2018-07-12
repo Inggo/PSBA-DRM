@@ -1,0 +1,51 @@
+main {
+  article > h2,
+  article > .page-contents.multi-content > h2 {
+    @include horizontal-gradient(darken(color("red"), 25%), transparentize(color("red"), .25));
+    color: $white;
+    margin: 15px 0 15px -15px;
+    padding: 5px 30px;
+  }
+}
+
+main .tab-content .tab-pane:first-child h2 {
+    font-size: 2.5em;
+}
+
+blockquote p {
+    margin-bottom: 0;
+}
+
+// Move to _about
+.about-mission {
+  @include horizontal-gradient(lighten(color("blue"), 30%), transparent, 75%);
+
+  margin: 0 -15px;
+  padding: 30px 45px 30px 60px;
+  position: relative;
+
+  color: darken(color("orange"), 10%);
+  font-weight: bold;
+  font-family: $font-family-serif;
+
+  font-size: 1.142857em;
+
+  &::before {
+    font-family: "Times New Roman", serif;
+    content: "“";
+    font-size: 100px;
+    color: transparentize(lighten(color("orange"), 10%), .66);
+    position: absolute;
+    top: -15px;
+    left: 5px;
+  }
+}
+
+.about-objectives {
+  @include horizontal-gradient(transparentize(color("orange"), .75), transparent, 75%);
+  font-size: 1.1em;
+  margin: 0 -15px 15px;
+  padding: 30px 45px;
+  color: darken(color("blue"), 33%);
+  font-weight: bold;
+}

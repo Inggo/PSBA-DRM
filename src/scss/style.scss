@@ -11,5 +11,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: psba-drm
 */
 
+@import "mixins";
+@import "variables";
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
 @import "global";
+@import "typography";
 @import "top";
