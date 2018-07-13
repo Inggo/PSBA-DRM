@@ -97,6 +97,10 @@ blockquote p {
   margin-bottom: 0;
 }
 
+.navbar .nav-item {
+  text-transform: none;
+}
+
 .about-mission {
   /* fallback/image non-cover color */
   background-color: #99caff;

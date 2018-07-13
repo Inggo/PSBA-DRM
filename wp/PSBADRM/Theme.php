@@ -13,11 +13,23 @@ class Theme extends BaseTheme
         }, 20);
 
         add_filter('theme_page_templates', [$this, 'removeUnusableTemplates']);
+        add_action('init', [$this, 'unregisterPostTypes']);
+
+        $this->cpt_registrar[] = new CPTRegistrar;
+    }
+
+    public function unregisterPostTypes()
+    {
+        unregister_post_type('proceedings');
+        unregister_post_type('personnel');
+        unregister_post_type('curriculum');
     }
 
     public function removeUnusableTemplates($templates)
     {
         unset($templates['templates/portal-page.php']);
+        unset($templates['templates/contact-page.php']);
+        unset($templates['templates/personnel-page.php']);
         return $templates;
     }
 

@@ -9,11 +9,15 @@ main {
 }
 
 main .tab-content .tab-pane:first-child h2 {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 blockquote p {
-    margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+.navbar .nav-item {
+  text-transform: none;
 }
 
 // Move to _about
